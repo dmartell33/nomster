@@ -13,9 +13,11 @@
     <% end %>
 
   <% if place.comments.present? %>
-    <div class="col-12">
+
+  <div class="col-12">
+      
       <blockquote>
-        <% if place.comments,last.humanized_rating.present? %>
+        <% if place.comments.last.humanized_rating.present? %>
           <b><%= place.comments.last.humanized_rating %></b> -
         <% end %>
         <%= place.comments.last.message %>
@@ -23,10 +25,6 @@
       </blockquote>
     </div>
   <% end %>
-
-<% end %>
-
-
 
 
 <div class="center_pagination">

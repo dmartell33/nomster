@@ -101,3 +101,18 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+#google_map , #google_map :before, #google_map *:after {
+   -webkit-transform: none !important;
+}
+
+.show-image-size  {
+  object-fit: scale-down;
+  width: 300px;
+  height: 337px;
+}
+
+
+.text {
+  margin-top: 10px;
+}

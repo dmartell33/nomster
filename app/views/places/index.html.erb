@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Places</h1>
 
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
@@ -27,9 +25,9 @@
   <% end %>
 
 
-<div class="center_pagination">
-  <div class="page_info">
-    <%= page_entries_info @places %>
   </div>
+   <% end %>
+  <br />
+
+  
   <%= will_paginate @places %>
-</div>
